@@ -1,29 +1,29 @@
 #include<stdio.h>
-
 int main()
 {
-    int n,k=0;
+    int a=0,b=1;
+    int n;
     scanf("%d",&n);
-    int a=0,b=1,s;
-    for(int i=1;i<=n+1;i++)
+    int fib=0;
+    while(a<=n)
     {
-        s=a+b;
-        if(s==n)
+        if(a==n)
         {
-            k++;
+            fib=1;
             break;
+            
         }
+        int c=a+b;
         a=b;
-        b=s;
-        
+        b=c;
     }
-    if(k==0)
+    if(fib==1)
     {
-        printf("False");
+        printf("True");
         
     }
     else
     {
-        printf("True");
+        printf("False");
     }
 }
