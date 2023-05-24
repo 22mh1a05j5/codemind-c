@@ -1,11 +1,14 @@
 #include<stdio.h>
-int main(){
-    long long int n;
+int main()
+{
+   long long int n;
     scanf("%lld",&n);
-    if(n<=9999999999 && n>1000000000){
-        printf("Valid");
+    if(1000000000>n&&n<=999999999)
+    {
+    printf("Invalid");
     }
-    else{
-        printf("Invalid");
+    else
+    {
+        printf("Valid");
     }
 }
